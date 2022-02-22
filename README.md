@@ -11,7 +11,7 @@ This result is typically expressed using a **pattern** of square emojis: each sq
 > 🟩🟨⬜🟨🟩<br>
 > 🟩🟩🟩🟩🟩
 
-In this assessment, students will implement a class called `AbsurdleManager` that manages a game of **Absurdle**, a variant of Wordle developed by [qntm](https://qntm.org/absurdle):
+**Absurdle** is a variant of Wordle developed by [qntm](https://qntm.org/absurdle):
 
 > Wordle picks a single secret word at the beginning of the game, and then you have to guess it. Absurdle gives the impression of picking a single secret word, but instead what it actually does is consider the entire list of all possible secret words which conform to your guesses so far. Each time you guess, Absurdle prunes its internal list as little as possible, attempting to intentionally prolong the game as much as possible.
 
@@ -49,6 +49,20 @@ The manager would pick ⬜🟨⬜⬜ corresponding to the target words else, *fl
 In this case, there's a tie between the possible patterns because both patterns include only 1 target word. The manager chooses the pattern ⬜🟩🟨⬜ not because it would prolong the game, but because ⬜🟩🟨⬜ appears before 🟩🟩🟩🟩 when considering the patterns in sorted order. By coincidence rather than intention, this rule helps the manager prolong the game.
 
 After this, there's only a single target word, *else*. The game ends when the player guesses the target word and the manager is left with no other option but to return the pattern 🟩🟩🟩🟩.
+
+## Scaffold and check files
+
+This repository has two subdirectories: the assignment **scaffold** and the assignment **check** files. Students only need to implement the `AbsurdleManager` class in the assignment scaffold by following the directions below. Compile and run the `AbsurdleMain` class to play a game of Absurdle using any one of the three provided dictionaries.
+
+- `dictionary1.txt` contains the official list of 2309 5-letter words used in Wordle.
+- `dictionary2.txt` contains the 9 4-letter words used in the example game above.
+- `dictionary3.txt` contains 30 5-letter words for testing with a slightly larger word list.
+
+The assignment check files include a `compare.py` shell script that runs [icdiff](https://github.com/jeffkaufman/icdiff) against the expected output for a few example games. The script requires a completed `AbsurdleManager` class. Compile the `AbsurdleMainDict*` classes and run the script.
+
+```sh
+javac AbsurdleMainDict*.java && python3 compare.py
+```
 
 ## Constructor
 
