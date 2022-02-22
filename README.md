@@ -114,3 +114,55 @@ Implement the constructor and the `words` method first. Then, implement and test
 
 - `DICTIONARY_FILE` represents the name of the file containing the list of initial words. By default, it reads from `dictionary1.txt`, which contains the official list of 2309 5-letter words used in Wordle. When testing, it may be easier to use the `dictionary2.txt` file that only contains 9 4-letter words.
 - `SHOW_COUNT` is `false` by default; set it to `true` to see the number of words under consideration.
+
+## Self-check questions
+
+### Question 1
+
+In the example with 4-letter words, we described what happens when the manager has the target words *cool, else, flew, ibex*.
+
+When the player guesses "beta", the manager chooses between the following possible patterns.
+
+- ⬜⬜⬜⬜ — *cool*
+- ⬜🟨⬜⬜ — *else, flew*
+- 🟨🟨⬜⬜ — *ibex*
+
+Why did the manager choose the pattern ⬜🟨⬜⬜?
+
+- [ ] The pattern contained the largest number of ⬜ gray square tiles.
+- [ ] The pattern contained the largest number of 🟨 yellow square tiles.
+- [ ] The pattern corresponds to the largest number of target words.
+- [ ] The pattern corresponds to the smallest number of target words.
+- [ ] The pattern appears earlier in sorted order.
+- [ ] The pattern appears later in sorted order.
+
+### Question 2
+
+After the next guess, we described what happens when the manager has the target words *else, flew*.
+
+When the player guesses "flew", the manager chooses between the following possible patterns.
+
+- ⬜🟩🟨⬜ — *else*
+- 🟩🟩🟩🟩 — *flew*
+
+Why does the manager choose the pattern ⬜🟩🟨⬜ instead of 🟩🟩🟩🟩?
+
+- [ ] The pattern contained the largest number of ⬜ gray square tiles.
+- [ ] The pattern contained the largest number of 🟨 yellow square tiles.
+- [ ] The pattern corresponds to the largest number of target words.
+- [ ] The pattern corresponds to the smallest number of target words.
+- [ ] The pattern appears earlier in sorted order.
+- [ ] The pattern appears later in sorted order.
+
+### Question 3
+
+Suppose we started a new game of Absurdle with the possible 4-letter target words *dogs, cats, bird*.
+
+If the player guesses "dirt", what patterns will be generated in the `record` method?
+
+- [ ] ⬜⬜⬜⬜
+- [ ] ⬜⬜⬜🟨
+- [ ] ⬜⬜🟨⬜
+- [ ] ⬜🟩🟩🟨
+- [ ] 🟨🟩🟩⬜
+- [ ] 🟩⬜⬜⬜
