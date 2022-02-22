@@ -1,7 +1,5 @@
-import contextlib
 import icdiff
 import pexpect
-import subprocess
 import sys
 
 from dataclasses import dataclass
