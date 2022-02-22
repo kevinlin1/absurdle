@@ -27,7 +27,7 @@ Suppose the Absurdle manager only knows the following 4-letter words.
 
 - *ally, beta, cool, deal, else, flew, good, hope, ibex*
 
-In Absurdle, instead of beginning by choosing a word, the computer narrows down its set of possible answers as the player makes guesses. If the player guesses "argh" as the first word, the Absurdle manager considers all the possible patterns corresponding to the guess.
+In Absurdle, instead of beginning by choosing a word, the manager narrows down its set of possible answers as the player makes guesses. If the player guesses "argh" as the first word, the Absurdle manager considers all the possible patterns corresponding to the guess.
 
 - ⬜⬜⬜⬜ — *cool, else, flew, ibex*
 - ⬜⬜⬜🟨 — *hope*
