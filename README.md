@@ -11,7 +11,7 @@ This result is typically expressed using a **pattern** of square emojis: each sq
 > 🟩🟨⬜🟨🟩<br>
 > 🟩🟩🟩🟩🟩
 
-**Absurdle** is a variant of Wordle developed by [qntm](https://qntm.org/absurdle):
+**Absurdle** is a variant of Wordle coined by [qntm](https://qntm.org/absurdle):
 
 > Wordle picks a single secret word at the beginning of the game, and then you have to guess it. Absurdle gives the impression of picking a single secret word, but instead what it actually does is consider the entire list of all possible secret words which conform to your guesses so far. Each time you guess, Absurdle prunes its internal list as little as possible, attempting to intentionally prolong the game as much as possible.
 
@@ -41,7 +41,7 @@ The manager picks the pattern that contains the largest number of target words. 
 - ⬜🟨⬜⬜ — *else, flew*
 - 🟨🟨⬜⬜ — *ibex*
 
-The manager would pick ⬜🟨⬜⬜ corresponding to the target words else, *flew*. If the player then guesses "flew", the manager chooses between the following possible patterns.
+The manager would pick ⬜🟨⬜⬜ corresponding to the target words *else, flew*. If the player then guesses "flew", the manager chooses between the following possible patterns.
 
 - ⬜🟩🟨⬜ — *else*
 - 🟩🟩🟩🟩 — *flew*
