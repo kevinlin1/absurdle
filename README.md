@@ -58,10 +58,10 @@ This repository has two subdirectories: the assignment **scaffold** and the assi
 - `dictionary2.txt` contains the 9 4-letter words used in the example game above.
 - `dictionary3.txt` contains 30 5-letter words for testing with a slightly larger word list.
 
-The assignment check files include a `compare.py` shell script that programmatically plays several games using [pexpect](https://github.com/pexpect/pexpect) and compares the result against the expected output using [icdiff](https://github.com/jeffkaufman/icdiff). The script requires a completed `AbsurdleManager` class. Compile the `AbsurdleMainDict*` classes and run the script.
+The assignment check files include a `compare.py` shell script that programmatically plays several games using [pexpect](https://github.com/pexpect/pexpect) and compares the result against the expected output using [icdiff](https://github.com/jeffkaufman/icdiff). The script requires a completed `AbsurdleManager` class and JDK 11 or above. Compile the `AbsurdleManager` class and run the script.
 
 ```sh
-javac AbsurdleMainDict*.java && python3 compare.py
+javac AbsurdleManager.java && python3 compare.py
 ```
 
 ## Constructor
