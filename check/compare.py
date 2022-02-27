@@ -23,8 +23,8 @@ class Options:
 
 def run(path, class_name):
     result = []
+    absurdle = pexpect.spawn(f"java {class_name}.java", timeout=3)
     try:
-        absurdle = pexpect.spawn(f"java {class_name}.java", timeout=3)
         with open(path) as f:
             for line in f.readlines():
                 absurdle.expect_exact("> ")
