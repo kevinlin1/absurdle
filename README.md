@@ -93,7 +93,13 @@ Use `TreeSet` and `TreeMap` implementations for all sets and maps in this assign
 
 ### `patternFor(String word, String guess)`
 
-To implement this method, you will need to keep track of the number of times each letter appears in the target word, decrement the count when assigning green tiles, and decrement the count when assigning yellow tiles. Tiles not assigned green or yellow are gray. Use the following data structures in this method.
+To implement this method, keep track of the number of times each letter appears in the target word, decrement the count when assigning green tiles, and decrement the count when assigning yellow tiles. Tiles not assigned green or yellow are gray. For example, to compute `patternFor("abbey", "bebop")`:
+
+1. ❔❔🟩❔❔ — assign green tiles first.
+2. 🟨🟨🟩❔❔ — assign yellow tiles next.
+3. 🟨🟨🟩⬜⬜ — assign gray tiles last.
+
+Use the following data structures in this method.
 
 - `Map<Character, Integer> counts` to keep track of the count for each letter in the target word.
 - `String[] pattern = new String[word.length()]` to store the assigned green, yellow, and gray tiles. Each index in pattern stores one of the three types of tiles: `"🟩"`, `"🟨"`, or `"⬜"`. Construct the final string result from this pattern by appending all the tiles.
