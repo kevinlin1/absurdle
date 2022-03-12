@@ -135,8 +135,8 @@ When the player guesses "beta", the manager chooses between the following possib
 
 Why did the manager choose the pattern ⬜🟨⬜⬜?
 
-- [ ] The pattern contained the largest number of ⬜ gray square tiles.
-- [ ] The pattern contained the largest number of 🟨 yellow square tiles.
+- [ ] The pattern contains the most ⬜ gray square tiles.
+- [ ] The pattern contains the least 🟨 yellow square tiles.
 - [ ] The pattern corresponds to the largest number of target words.
 - [ ] The pattern corresponds to the smallest number of target words.
 - [ ] The pattern appears earlier in sorted order.
@@ -153,8 +153,8 @@ When the player guesses "flew", the manager chooses between the following possib
 
 Why does the manager choose the pattern ⬜🟩🟨⬜ instead of 🟩🟩🟩🟩?
 
-- [ ] The pattern contained the largest number of ⬜ gray square tiles.
-- [ ] The pattern contained the largest number of 🟨 yellow square tiles.
+- [ ] The pattern contains the most ⬜ gray square tiles.
+- [ ] The pattern contains the least 🟨 yellow square tiles.
 - [ ] The pattern corresponds to the largest number of target words.
 - [ ] The pattern corresponds to the smallest number of target words.
 - [ ] The pattern appears earlier in sorted order.
