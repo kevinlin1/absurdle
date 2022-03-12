@@ -125,6 +125,15 @@ Implement the constructor and the `words` method first. Then, implement and test
 
 ### Question 1
 
+This week's lessons introduced associative collections such as sets and maps. It's helpful to distinguish between **being a client** of a data type versus **being an implementer** of a data type.
+
+Does this assignment focus more on being a client or more on being an implementer?
+
+- [ ] Being a client of associative collections.
+- [ ] Being an implementer of associative collections.
+
+### Question 2
+
 In the example with 4-letter words, we described what happens when the manager has the target words *cool, else, flew, ibex*.
 
 When the player guesses "beta", the manager chooses between the following possible patterns.
@@ -142,7 +151,7 @@ Why did the manager choose the pattern ⬜🟨⬜⬜?
 - [ ] The pattern appears earlier in sorted order.
 - [ ] The pattern appears later in sorted order.
 
-### Question 2
+### Question 3
 
 After the next guess, we described what happens when the manager has the target words *else, flew*.
 
@@ -160,7 +169,7 @@ Why does the manager choose the pattern ⬜🟩🟨⬜ instead of 🟩🟩🟩�
 - [ ] The pattern appears earlier in sorted order.
 - [ ] The pattern appears later in sorted order.
 
-### Question 3
+### Question 4
 
 Suppose we started a new game of Absurdle with the possible 4-letter target words *dogs, cats, bird*.
 
