@@ -60,17 +60,14 @@ if __name__ == "__main__":
             printed_lines += 1
         return printed_lines != 1
 
-    err = 0
     for p in sorted(Path("dict2").glob("*.input")):
         with open(p.with_suffix(".expected")) as f:
             if diff(f.read(), run(p.with_suffix(".input"), "AbsurdleMainDict2"),
                     p.with_suffix(".expected"), p.with_suffix(".actual")):
-                err = 1
+                sys.exit(1)
 
     for p in sorted(Path("dict1").glob("*.input")):
         with open(p.with_suffix(".expected")) as f:
             if diff(f.read(), run(p.with_suffix(".input"), "AbsurdleMainDict1"),
                     p.with_suffix(".expected"), p.with_suffix(".actual")):
-                err = 1
-
-    sys.exit(err)
+                sys.exit(1)
