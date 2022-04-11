@@ -46,7 +46,7 @@ The manager would pick ⬜🟨⬜⬜ corresponding to the target words *else, fl
 - ⬜🟩🟨⬜ — *else*
 - 🟩🟩🟩🟩 — *flew*
 
-In this case, there's a tie between the possible patterns because both patterns include only 1 target word. The manager chooses the pattern ⬜🟩🟨⬜ not because it would prolong the game, but because ⬜🟩🟨⬜ appears before 🟩🟩🟩🟩 when considering the patterns in sorted order. By coincidence rather than intention, this rule helps the manager prolong the game.
+In this case, there's a tie between the possible patterns because both patterns include only 1 target word. The manager chooses the pattern ⬜🟩🟨⬜ not because it would prolong the game, but because ⬜🟩🟨⬜ appears before 🟩🟩🟩🟩 when considering the patterns in sorted order.
 
 After this, there's only a single target word, *else*. The game ends when the player guesses the target word and the manager is left with no other option but to return the pattern 🟩🟩🟩🟩.
 
