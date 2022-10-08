@@ -85,7 +85,7 @@ This static method is used to generate the pattern for a given target word and g
 
 ### `public String record(String guess)`
 
-The client calls this method to record a guess. Using the given guess, this method determines the next set of words under consideration and returns the pattern for the guess. Throws an `IllegalStateException` if the if the set of words is empty, and throws an `IllegalArgumentException` if the guess does not have the correct length. Assume the guess contains all lowercase letters.
+The client calls this method to record a guess. Using the given guess, this method determines the next set of words under consideration and returns the pattern for the guess. Throws an `IllegalStateException` if the set of words is empty, and throws an `IllegalArgumentException` if the guess does not have the correct length. Assume the guess contains all lowercase letters.
 
 ## Implementation guidelines
 
