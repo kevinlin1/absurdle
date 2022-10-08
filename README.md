@@ -160,7 +160,7 @@ When the player guesses "flew", the manager chooses between the following possib
 - ⬜🟩🟨⬜ — *else*
 - 🟩🟩🟩🟩 — *flew*
 
-Why does the manager choose the pattern ⬜🟩🟨⬜ instead of 🟩🟩🟩🟩?
+Why did the manager choose the pattern ⬜🟩🟨⬜?
 
 - [ ] The pattern contains the most ⬜ gray square tiles.
 - [ ] The pattern contains the least 🟨 yellow square tiles.
