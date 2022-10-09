@@ -15,6 +15,8 @@ This result is typically expressed using a **pattern** of square emojis: each sq
 
 > Wordle picks a single secret word at the beginning of the game, and then you have to guess it. Absurdle gives the impression of picking a single secret word, but instead what it actually does is consider the entire list of all possible secret words which conform to your guesses so far. Each time you guess, Absurdle prunes its internal list as little as possible, attempting to intentionally prolong the game as much as possible.
 
+[**Try playing qntm's version of the game online!**](https://qntm.org/files/absurdle/absurdle.html) After guessing a few words, open your browser **Console** with <kbd>Control</kbd> <kbd>Shift</kbd> <kbd>J</kbd> (Windows / Linux) or <kbd>Command</kbd> <kbd>Option</kbd> <kbd>J</kbd> (Mac) to "look under the hood" and observe the internal state of the game.
+
 By completing this assignment, students will be able to:
 
 - Implement a well-designed Java class to meet a given specification.
